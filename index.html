@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        apexaproperties
+    </title>
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="script/main.js"></script>
+
+
+    <script>
+        let d = new Date();
+        let year = d.getFullYear();
+        document.querySelector(".productionDate").innerHTML = year;
+    </script>
+    
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-header" data-bs-root-margin="0px 0px -40%"
+    data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+    <nav class="navbar navbar-expand-lg" id="navbar-header">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="" class="brand-image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutUs">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                    <li>
+                        <a class="nav-link" href="#services">SERVICES</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mentorship">MENTORSHIP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactUs">CONTACT US</a>
+                    </li>
+                </ul>
+                <!-- <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME PAGE -->
+
+
+
+    <div id="carouselExampleIndicators home" class="carousel slide" data-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active carousel-image" data-bs-interval="10000">
+                <img class="d-block w-100" src="images/background.jpg" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4 class="home-sub-healine">
+                        Setting New Standards in Empowering Others to Create Wealth BNM
+                    </h4>
+                    <p class="home-details-paragraph-1">
+                        At our core, we aspire to set new standards in empowering individuals to create lasting wealth
+                        and
+                        achieve financial freedom. Our mission is not only to educate but to inspire and guide people
+                        through practical strategies and actionable insights. Whether through our comprehensive training
+                        programmes, personalized mentorship, or hands-on support, we are dedicated to transforming lives
+                        by
+                        equipping others with the tools needed to build sustainable wealth.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="carousel-item carousel-image" data-bs-interval="10000">
+                <img class="d-block w-100" src="images/servicesImage.jpg" alt="Second slide">
+                <div class="container">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p class="home-details-paragraph-2">
+                            We believe true empowerment comes from providing knowledge, fostering confidence, and
+                            promoting a
+                            mindset of growth and abundance. Our approach is rooted in sharing real-world experience and
+                            proven
+                            methods, particularly in the property investment and business development sectors. By
+                            leading with
+                            integrity and passion, we aim to cultivate a community of empowered individuals who take
+                            control of
+                            their financial futures and, in turn, contribute positively to their families and
+                            communities.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item carousel-image" data-bs-interval="10000">
+                <img class="d-block w-100" src="images/aboutUsImage.jpg" alt="Third slide">
+                <div class="container">
+                    <div class="carousel-caption d-none d-md-block">
+
+                        <p class="home-details-paragraph-3">
+                            Our vision is bold: to create a ripple effect of prosperity by enabling others to thrive—one
+                            success
+                            story at a time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="container-fluid homepage-wrapper">
+            <img src="images/background.jpg" alt="" class="homeBackround">
+            <h1 class="homeHead">
+                <a href="" class="homeHeadline">Home</a>
+            </h1>
+            <div class="row homepage-sub-wrapper">  
+                <div class="col-md-12">
+                    <div class="homeDetails">
+                        <h4 class="home-sub-healine">
+                            Setting New Standards in Empowering Others to Create Wealth BNM
+                        </h4>
+                        <p class="home-details-paragraph-1">
+                            At our core, we aspire to set new standards in empowering individuals to create lasting wealth and
+                            achieve financial freedom. Our mission is not only to educate but to inspire and guide people
+                            through practical strategies and actionable insights. Whether through our comprehensive training
+                            programmes, personalized mentorship, or hands-on support, we are dedicated to transforming lives by
+                            equipping others with the tools needed to build sustainable wealth.
+                        </p>
+        
+                        <p class="home-details-paragraph-2">
+                            We believe true empowerment comes from providing knowledge, fostering confidence, and promoting a
+                            mindset of growth and abundance. Our approach is rooted in sharing real-world experience and proven
+                            methods, particularly in the property investment and business development sectors. By leading with
+                            integrity and passion, we aim to cultivate a community of empowered individuals who take control of
+                            their financial futures and, in turn, contribute positively to their families and communities.
+                        </p>
+        
+                        <p class="home-details-paragraph-3">
+                            Our vision is bold: to create a ripple effect of prosperity by enabling others to thrive—one success
+                            story at a time.
+                        </p>
+        
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+    <!-- ABOUT US -->
+
+    <div class="container about-us-wrapper" id="aboutUs">
+        <div class="row about-us-sub-wrapper">
+            <h1 class="headline">
+                <a href="" class="aboutUsHead">ABOUT US</a>
+            </h1>
+            <div class="col-md-6 aboutUsDetails">
+                <h3 class="about-sub-healine">
+                    Supporting Others on Their Journey to Becoming Successful Property Investors
+                </h3>
+                <p class="about-details-paragraph-1">
+                    My mission is clear: to support and guide others on their journey to transition into property
+                    investors and build a reliable stream of passive income they can live on. Having experienced
+                    firsthand the life-changing potential of property investment, I am passionate about helping others
+                    achieve the same freedom and security.
+                </p>
+
+                <p class="about-details-paragraph-2">
+                    I believe that with the right knowledge, strategy, and support, anyone can transform their financial
+                    future through property. My approach involves sharing proven investment strategies, offering
+                    practical tools, and providing mentorship to navigate challenges with confidence. From understanding
+                    market trends and sourcing profitable deals to managing properties and scaling a portfolio, my goal
+                    is to make the path to passive income as accessible and straightforward as possible.
+                </p>
+
+                <p class="about-details-paragraph-3">
+                    Whether you are looking to supplement your income, replace a full-time job, or create generational
+                    wealth, I am here to help you every step of the way. Together, we can turn the dream of living off
+                    passive income into a tangible reality, empowering you to live life on your own terms.
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                <img src="images/aboutUsImage.jpg" alt="" class="aboutUsImage">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SERVICES -->
+
+    <div class="container-fluid services-wrapper" id="services">
+        <h1 class="serviceHeadline">
+            <a href="" class="servicesHead">SERVICES</a>
+        </h1>
+        <div class="row services-sub-wrapper">
+            <div class="col-md-6 servicesImage">
+                <img src="images/servicesImage.jpg" alt="" class="servicesImg">
+            </div>
+
+            <div class="col-md-6 serviceParagraphs">
+                <h3 class="services-sub-healine">
+                    Serviced Accommodation Intensive: Elevate Your Property Investment Game
+                </h3>
+                <p class="sevices-details-paragraph-1">
+                    Serviced Accommodation Intensive is a focused training programme designed for property investors and
+                    entrepreneurs looking to maximize returns through serviced accommodation strategies. Unlike
+                    traditional buy-to-let models, serviced accommodation involves offering short-term, fully furnished
+                    rental properties to business travelers, tourists, or temporary residents. This model often yields
+                    higher profits through nightly or weekly rates while maintaining flexibility.
+                </p>
+
+                <p class="sevices-details-paragraph-2">
+                    Our Serviced Accommodation Intensive programme covers a wide range of topics, including property
+                    sourcing, compliance, management, marketing, and optimizing occupancy rates. Attendees learn how to
+                    identify ideal properties, manage bookings, handle guest relations, and ensure compliance with local
+                    regulations. The intensive nature of the course allows participants to gain actionable insights
+                    quickly, through workshops, case studies, and hands-on learning.
+                </p>
+
+                <p class="sevices-details-paragraph-3">
+                    For investors aiming to boost cash flow and diversify their portfolios, Our Serviced Accommodation
+                    Intensive programme provides you the knowledge and tools you need to excel in the lucrative
+                    short-term rental market. With the rise of platforms like Airbnb and Booking.com, the demand for
+                    quality serviced accommodations continues to grow, making this a ripe time to explore this
+                    investment strategy.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid serviceMore" id="services">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="services-Accommodation-sub-healine">
+                    Serviced Accommodation Mastery (Online): Master the Short-Term Rental Market from Anywhere
+                </h3>
+
+                <p class="services-Accommodation-details-paragraph-1">
+                    Serviced Accommodation Intensive is a focused training programme designed for property investors and
+                    entrepreneurs looking to maximize returns through serviced accommodation strategies. Unlike
+                    traditional buy-to-let models, serviced accommodation involves offering short-term, fully furnished
+                    rental properties to business travelers, tourists, or temporary residents. This model often yields
+                    higher profits through nightly or weekly rates while maintaining flexibility.
+                </p>
+
+                <p class="services-Accommodation-details-paragraph-2">
+                    The programme covers everything from sourcing the right properties and setting up stylish,
+                    guest-ready spaces to managing bookings, optimizing occupancy rates, and ensuring compliance with
+                    regulations. Participants also gain insights into leveraging platforms like Airbnb and Booking.com,
+                    implementing dynamic pricing strategies, and delivering exceptional guest experiences.
+                </p>
+
+                <p class="services-Accommodation-details-paragraph-3">
+                    With a mix of video tutorials, live sessions, and downloadable resources, Serviced Accommodation
+                    Mastery (Online) empowers learners to progress at their own pace. Whether you’re looking to generate
+                    passive income, boost cash flow, or diversify your investment portfolio, this programme provides the
+                    practical tools and knowledge you need to thrive in the growing serviced accommodation market—all
+                    from the comfort of your home.
+                </p>
+            </div>
+
+            <div class="col-md-6">
+
+                <h3 class="Strategy-healine">
+                    BRRR Strategy: Build Wealth Through Property Investment
+                </h3>
+
+                <p class="strategies">
+                    Our BRRR Strategy programm is designed for property investors looking to generate long-term wealth
+                    and financial freedom through a proven investment model. BRRR stands for Buy, Refurbish, Rent,
+                    Remortgage, and it offers a systematic approach to building a high-performing property portfolio
+                    with minimal upfront capital.
+                    The programme guides participants through each stage of the strategy:
+                <ul>
+                    <li>
+                        Buy: How to find and acquire undervalued or distressed properties.
+                    </li>
+
+                    <li>
+                        Refurbish: Adding value through strategic renovations and improvements.
+                    </li>
+
+                    <li>
+                        Rent: Generating steady cash flow by renting out the property.
+                    </li>
+
+                    <li>
+                        Remortgage Extracting equity to reinvest in the next property.
+                    </li>
+                </ul>
+
+                Through expert-led sessions, case studies, and actionable tools, our BRRR Strategy programme equips
+                you with the knowledge and confidence to recycle your funds and scale your portfolio quickly.
+                Whether you're a new or experienced investor, this programme provides a clear roadmap to achieving
+                sustainable, long-term returns in the property market.
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MENTORSHIP -->
+
+    <div class="container-fluid mentorship-wrapper" id="mentorship">
+        <div class="mentor">
+            <h1 class="mentorshipHeadline">
+                <a href="" class="mentorshipHead">1-to-1 Mentorship</a>
+            </h1>
+            <h4 class="mentorship-sub-healine">
+                1-to-1 Mentorship: Master the BRRR or Serviced Accommodation Strategy with Expert Guidance
+            </h4>
+        </div>
+        <div class="row mentorship-sub-wrapper">
+            <div class="col-md-4 mentorship1">
+
+                <p class="mentorship-details-paragraph-1">
+                    Our 1-to-1 Mentorship Programme offers personalized coaching for property investors looking to excel
+                    in either the BRRR (Buy, Refurbish, Rent, Remortgage) or Serviced Accommodation strategies. This
+                    bespoke mentorship is ideal for those who want tailored support and actionable insights to
+                    accelerate their property investment journey.
+                </p>
+            </div>
+
+            <div class="col-md-4 mentorship2">
+                <p class="about-details-paragraph-2">
+                    With direct access to an experienced property mentor, participants receive customized advice,
+                    step-by-step guidance, and accountability to help them achieve their specific investment goals.
+                    Whether navigating complex refurbishments in the BRRR model or maximizing occupancy and profits in
+                    serviced accommodation, our mentorship programme is designed to remove roadblocks and boost
+                    confidence.
+                </p>
+            </div>
+
+            <div class="col-md-4 mentorship3">
+                <p class="about-details-paragraph-3">
+                    The 1-to-1 format ensures that every session is focused on your unique challenges and opportunities,
+                    offering practical solutions and industry secrets that you won't find in standard training courses.
+                    If you're serious about building a profitable property portfolio and achieving financial freedom,
+                    our mentorship programme provides the expert support needed to fast-track your success.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer" id="contactUs">
+        <div class="row footer-wrapper">
+            <div class="col-md-6 footer-contact-us">
+                <h4 class="contact">
+                    Contact us
+                </h4>
+                <div class="contact">
+                    <i class="bi bi-telephone intouch-icon"></i>
+                    <a href="" class="contact-detail">07727080878</a>
+                </div>
+
+                <div class="contact">
+                    <a href="" class="contact-detail">info@apexaproperties.com</a>
+                </div>
+            </div>
+
+            <div class="col-md-6 footer-social-handles">
+                <h4 class="social-handles">
+                    Social media handles
+                </h4>
+                <i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/successclub" class="handle">Facebook</a>
+            </div>
+
+            <div class="reserves">
+                <p class="mb-0">&copy; <span class="productionDate"> </span><a class="text-secondary fw-bold footer-names"
+                        href="#"> Apexa Properties </a> All Rights Reserved.
+                </p>
+                <div class="developer">
+                    <p class="developer"> Designed by <a class="text-secondary fw-bold footer-names"
+                            href="https://www.instagram.com/abayomi_adetona">Crowntona TecHub</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script defer src="script/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.0/countUp.min.js"
+        integrity="sha512-E0zfDwA1CopT4gzJmj9tMpd7O6pTpuybTK58eY1GwqptdasUohyImuualLt/S5XvM8CDnbaTNP/7MU3bQ5NmQg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,412 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+ 
+}
+
+body{
+    position: relative;
+   
+}
+
+
+.brand-image{
+    width: 10rem;
+    height: 5rem;
+}
+
+.navbar {
+    background-color: rgb(228, 228, 228);
+    
+    width: 100%;
+    overflow: hidden;
+    color: white !important;
+   position: sticky;
+   top: 0;
+  
+}
+
+.navbar .navbar-brand{
+  
+    width: 8rem;
+    height: 4rem;
+}
+
+
+.navbar a {
+    color: blue;
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+    margin-right: 40px;
+}
+
+.navbar a:hover {
+    color: red;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+.navbar-text,
+.navbar-brand,
+.navbar-link {
+    color: white !important;
+}
+
+
+
+.homeHeadline{
+    text-decoration: none;
+    color: red;
+    
+}
+
+.home-sub-healine {
+    margin-bottom: 1rem;
+}
+
+
+
+.homepage-wrapper{
+    /* margin-top: 2rem; */
+    position: absolute;
+    padding-bottom: 2rem;
+    width: 100%;
+    height: 100%;
+    top: 16.5%;
+    
+}
+
+
+.homeHead {
+    font-weight: 700;
+    /* text-transform: uppercase; */
+    text-align: center;
+    margin-top: 2rem;
+    position: relative;
+
+}
+
+.carousel{
+    position: relative;
+    top: 15%;
+    width: 100%;
+}
+
+
+.carousel-inner > .carousel-item > img {
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
+.homeBackround {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    
+}
+
+.homeDetails {
+    position: relative;
+    left: 0;
+    top: 1rem;
+    text-align: center;
+    padding: 2rem 5rem;
+    color: black;
+    
+    
+}
+
+
+.about-us-wrapper{
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.aboutUsImage{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-left: 2rem ;
+}
+
+
+.headline {
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+
+.aboutUsDetails {
+    padding: 1rem;
+    text-align: left;
+}
+
+.aboutUsHead{
+    text-decoration: none;
+    color: red;
+    /* text-transform: uppercase; */
+}
+
+.about-us-sub-wrapper {
+    text-align: center;
+}
+
+/* services styling */
+
+.services-wrapper {
+    background-color: blue;
+    color: white;
+    padding: 5rem 7rem 5rem 7rem;
+    margin-bottom: 5rem;
+}
+
+.servicesImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+   
+}
+
+.serviceParagraphs {
+/* padding: 3rem; */
+text-align: left;
+}
+
+.serviceHeadline {
+    text-align: center;
+    margin-bottom: 3rem;
+    
+}
+
+.servicesHead{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    font-weight: 700;
+   
+}
+
+
+.serviceMore {
+    padding: 3rem 7rem;
+    margin-bottom: 3rem;
+}
+
+
+/* MENTORSHIP */
+
+.mentorship-wrapper {
+    background-color: blue;
+    color: white;
+    padding: 3rem 7rem;
+}
+
+.mentor {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.mentorshipHead {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+
+
+}
+
+.mentorship-sub-healine {
+    margin-top: 2rem;
+}
+
+footer {
+    background-color: rgb(97, 97, 97);
+    padding: 3rem 7rem;
+    color: white;
+}
+
+.footer-wrapper {
+    background-color: rgb(97, 97, 97);
+    color: white;
+    padding: 3rem 7rem;
+}
+   
+
+.contact {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+
+.contact-detail {
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.handle{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+
+.reserves {
+    text-align: center;
+    width: 100%;
+    
+    height: 100px;
+    padding: 2rem;
+    text-decoration: none;
+
+}
+
+.reserves a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.productionDate {
+    color: white;
+}
+
+/* 
+#overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+  } */
+  
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    .brand-image{
+        width: 5rem;
+        height: 2.5rem;
+    }
+
+
+    .headline a{
+        text-decoration: none;
+        color: blue;
+    } 
+    
+    .homepage-wrapper{
+        /* margin-top: 2rem; */
+        position: absolute;
+        padding-bottom: 4rem;
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        border-bottom: 1px solid blue;
+
+        
+    }
+
+    .homeDetails {
+        position: relative;
+        left: 0;
+        top: 1rem;
+        text-align: center;
+        padding: 1rem 1rem;
+        color: black;
+        
+        
+    }
+
+    .about-us-wrapper{
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+    }
+
+
+    .aboutUsDetails {
+        text-align: left;
+    }
+    
+    
+    .aboutUsImage{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        float: right;
+    }
+
+
+    .services-wrapper {
+        background-color: blue;
+        color: white;
+        padding: 2rem;
+        margin-bottom: 5rem;
+    }
+
+
+    .serviceParagraphs {
+        margin-top: 2rem;
+    }
+
+    .serviceMore {
+        padding: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .mentorship-wrapper {
+        background-color: blue;
+        color: white;
+        padding: 2rem;
+    }
+
+    
+.footer {
+    padding: 1rem;
+    background-color: rgb(97, 97, 97);
+    color: white;
+    text-align:left;
+}
+
+
+
+
+.footer-social-handles {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+
+
+
+.reserves {
+    text-align:left;
+    width: 100%;
+    height: 100px;
+    padding: 1rem;
+    text-decoration: none;
+
+}
+
+.reserves a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+}
