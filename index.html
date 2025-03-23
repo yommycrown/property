@@ -38,12 +38,37 @@
         let d = new Date();
         let year = d.getFullYear();
         document.querySelector(".productionDate").innerHTML = year;
+
+
+
+       
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
     </script>
-    
+
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar-header" data-bs-root-margin="0px 0px -40%"
-    data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+<body data-bs-spy="scroll" data-bs-target="#navbar-header"
+    data-bs-smooth-scroll="true" class="scrollspy-example">
     <nav class="navbar navbar-expand-lg" id="navbar-header">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -215,7 +240,7 @@
 
     <!-- ABOUT US -->
 
-    <div class="container about-us-wrapper" id="aboutUs">
+    <div class="container-fluid about-us-wrapper" id="aboutUs">
         <div class="row about-us-sub-wrapper">
             <h1 class="headline">
                 <a href="" class="aboutUsHead">ABOUT US</a>
@@ -413,6 +438,7 @@
     </div>
 
     <div class="container-fluid footer" id="contactUs">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
         <div class="row footer-wrapper">
             <div class="col-md-6 footer-contact-us">
                 <h4 class="contact">
