@@ -131,8 +131,12 @@ body{
 
 
 .about-us-wrapper{
-    margin-top: 5rem;
-    margin-bottom: 3rem;
+    /* margin-top: rem; */
+    /* margin-bottom: 3rem; */
+    background-color: red;
+    color: white;
+    padding: 5rem 7rem 5rem 7rem;
+
 }
 
 .aboutUsImage{
@@ -140,13 +144,13 @@ body{
     height: 100%;
     border-radius: 10px;
     object-fit: cover;
-    margin-left: 2rem ;
 }
 
 
 .headline {
     margin-bottom: 3rem;
     font-weight: 700;
+    color: white;
 }
 
 .aboutUsDetails {
@@ -156,7 +160,7 @@ body{
 
 .aboutUsHead{
     text-decoration: none;
-    color: red;
+    color: white;
     /* text-transform: uppercase; */
 }
 
@@ -170,7 +174,7 @@ body{
     background-color: blue;
     color: white;
     padding: 5rem 7rem 5rem 7rem;
-    margin-bottom: 5rem;
+    /* margin-bottom: 5rem; */
 }
 
 .servicesImg {
@@ -188,7 +192,7 @@ text-align: left;
 
 .serviceHeadline {
     text-align: center;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
     
 }
 
@@ -203,7 +207,9 @@ text-align: left;
 
 .serviceMore {
     padding: 3rem 7rem;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
+    background-color: red;
+    color: white;
 }
 
 
@@ -392,6 +398,8 @@ footer {
     .serviceMore {
         padding: 2rem;
         margin-bottom: 3rem;
+        background-color: red;
+        color: white;
     }
 
     .mentorship-wrapper {
