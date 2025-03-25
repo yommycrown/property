@@ -4,11 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>
-        apexaproperties
-    </title>
-
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
     <!-- Google Web Fonts -->
@@ -27,53 +22,124 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="script/main.js"></script>
+
+    <title>apexaproperties</title>
+
+ 
+    <!-- <script defer src="script/main.js"></script> -->
 
 
     <script>
+
         let d = new Date();
         let year = d.getFullYear();
         document.querySelector(".productionDate").innerHTML = year;
 
 
 
-       
-// Get the button
-let mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+
+        function myFunction(){
+            document.querySelector('.serviceMore', '.serviceMore2').style.display="block";
+        }
+
+
+        function myFunction(){
+            document.querySelector('.serviceMore2').style.display="block";
+        }
+
+        
 
 
     </script>
 
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar-header"
-    data-bs-smooth-scroll="true" class="scrollspy-example">
-    <nav class="navbar navbar-expand-lg" id="navbar-header">
+<body data-bs-spy="scroll" data-bs-target="#navbar-header" data-bs-smooth-scroll="true" class="scrollspy-example">
+
+
+    <!-- <nav class="navbar bg-light fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="images/logo.png" alt="" class="brand-image">
             </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle=" collapse offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Apexa Properties</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#aboutUs">ABOUT US</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">SERVICES</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#mentorship">MENTORSHIP</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contactUs">CONTACT US</a>
+                  </li>
+                
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav> -->
+
+
+
+
+
+
+
+    <nav class="navbar navbar-expand-lg" id="navbar-header fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="" class="brand-image">   
+            </a> 
+            <span><a href="#" class="logo-name"><h5 class="logoname">APEZA PROPERTIES</h5></a></span>
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -99,10 +165,6 @@ function topFunction() {
                         <a class="nav-link" href="#contactUs">CONTACT US</a>
                     </li>
                 </ul>
-                <!-- <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form> -->
             </div>
         </div>
     </nav>
@@ -110,7 +172,7 @@ function topFunction() {
     <!-- HOME PAGE -->
 
 
-
+<!-- 
     <div id="carouselExampleIndicators home" class="carousel slide" data-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -183,7 +245,7 @@ function topFunction() {
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-    </div>
+    </div> -->
 
 
 
@@ -200,13 +262,12 @@ function topFunction() {
 
 
 
-    <!-- <div class="container-fluid homepage-wrapper">
-            <img src="images/background.jpg" alt="" class="homeBackround">
+    <div class="container-fluid homepage-wrapper">
             <h1 class="homeHead">
                 <a href="" class="homeHeadline">Home</a>
             </h1>
             <div class="row homepage-sub-wrapper">  
-                <div class="col-md-12">
+                <div class="col-md-6">
                     <div class="homeDetails">
                         <h4 class="home-sub-healine">
                             Setting New Standards in Empowering Others to Create Wealth BNM
@@ -234,8 +295,15 @@ function topFunction() {
         
                     </div>
                 </div>
+
+                    <div class="col-md-6">
+                        <div class="imageContainer">
+                            <img src="images/background.jpg" alt="" class="homeImage">
+                        </div> 
+                    </div>
+
             </div>
-        </div> -->
+        </div>
 
 
     <!-- ABOUT US -->
@@ -272,7 +340,11 @@ function topFunction() {
             </div>
 
             <div class="col-md-6">
-                <img src="images/aboutUsImage.jpg" alt="" class="aboutUsImage">
+                
+                <div class="imageContainer2">
+                    <img src="images/aboutUsImage.jpg" alt="" class="aboutUsImage">
+                </div> 
+                
             </div>
         </div>
     </div>
@@ -285,8 +357,11 @@ function topFunction() {
             <a href="" class="servicesHead">SERVICES</a>
         </h1>
         <div class="row services-sub-wrapper">
-            <div class="col-md-6 servicesImage">
-                <img src="images/servicesImage.jpg" alt="" class="servicesImg">
+            <div class="col-md-6">
+                <div class="servicesImage">
+                    <img src="images/servicesImage.jpg" alt="" class="servicesImg">
+                </div>
+                
             </div>
 
             <div class="col-md-6 serviceParagraphs">
@@ -318,207 +393,235 @@ function topFunction() {
                 </p>
             </div>
         </div>
+        <div class="button">
+            <button class="learn-more" onclick="myFunction()">LEARN MORE</button>
+        </div>
+        
     </div>
 
 
 
     <div class="container-fluid serviceMore" id="services">
         <div class="row">
-            <div class="col-md-3">
-                <h3 class="services-Accommodation-sub-healine">
-                    Serviced Accommodation Mastery (Online): Master the Short-Term Rental Market from Anywhere
-                </h3>
-
-                <p class="services-Accommodation-details-paragraph-1">
-                    Serviced Accommodation Intensive is a focused training programme designed for property investors and
-                    entrepreneurs looking to maximize returns through serviced accommodation strategies. Unlike
-                    traditional buy-to-let models, serviced accommodation involves offering short-term, fully furnished
-                    rental properties to business travelers, tourists, or temporary residents. This model often yields
-                    higher profits through nightly or weekly rates while maintaining flexibility.
-                </p>
-
-                <p class="services-Accommodation-details-paragraph-2">
-                    The programme covers everything from sourcing the right properties and setting up stylish,
-                    guest-ready spaces to managing bookings, optimizing occupancy rates, and ensuring compliance with
-                    regulations. Participants also gain insights into leveraging platforms like Airbnb and Booking.com,
-                    implementing dynamic pricing strategies, and delivering exceptional guest experiences.
-                </p>
-
-                <p class="services-Accommodation-details-paragraph-3">
-                    With a mix of video tutorials, live sessions, and downloadable resources, Serviced Accommodation
-                    Mastery (Online) empowers learners to progress at their own pace. Whether you’re looking to generate
-                    passive income, boost cash flow, or diversify your investment portfolio, this programme provides the
-                    practical tools and knowledge you need to thrive in the growing serviced accommodation market—all
-                    from the comfort of your home.
-                </p>
-            </div>
-
-            <div class="col-md-3">
-                <img src="" alt="">
-            </div>
-
-
-
-            <div class="col-md-3">
-
-                <h3 class="Strategy-healine">
-                    BRRR Strategy: Build Wealth Through Property Investment
-                </h3>
-
-                <p class="strategies">
-                    Our BRRR Strategy programm is designed for property investors looking to generate long-term wealth
-                    and financial freedom through a proven investment model. BRRR stands for Buy, Refurbish, Rent,
-                    Remortgage, and it offers a systematic approach to building a high-performing property portfolio
-                    with minimal upfront capital.
-                    The programme guides participants through each stage of the strategy:
-                <ul>
-                    <li>
-                        Buy: How to find and acquire undervalued or distressed properties.
-                    </li>
-
-                    <li>
-                        Refurbish: Adding value through strategic renovations and improvements.
-                    </li>
-
-                    <li>
-                        Rent: Generating steady cash flow by renting out the property.
-                    </li>
-
-                    <li>
-                        Remortgage Extracting equity to reinvest in the next property.
-                    </li>
-                </ul>
-
-                Through expert-led sessions, case studies, and actionable tools, our BRRR Strategy programme equips
-                you with the knowledge and confidence to recycle your funds and scale your portfolio quickly.
-                Whether you're a new or experienced investor, this programme provides a clear roadmap to achieving
-                sustainable, long-term returns in the property market.
-                </p>
-
-            </div>
-
-
-            <div class="col-md-3">
-                <img src="" alt="">
-            </div>
-        </div>
-    </div>
-
-
-    <!-- MENTORSHIP -->
-
-    <div class="container-fluid mentorship-wrapper" id="mentorship">
-        <div class="mentor">
-            <h1 class="mentorshipHeadline">
-                <a href="" class="mentorshipHead">1-to-1 Mentorship</a>
-            </h1>
-            <h4 class="mentorship-sub-healine">
-                1-to-1 Mentorship: Master the BRRR or Serviced Accommodation Strategy with Expert Guidance
-            </h4>
-        </div>
-        <div class="row mentorship-sub-wrapper">
-            <div class="col-md-4 mentorship1">
-
-                <p class="mentorship-details-paragraph-1">
-                    Our 1-to-1 Mentorship Programme offers personalized coaching for property investors looking to excel
-                    in either the BRRR (Buy, Refurbish, Rent, Remortgage) or Serviced Accommodation strategies. This
-                    bespoke mentorship is ideal for those who want tailored support and actionable insights to
-                    accelerate their property investment journey.
-                </p>
-            </div>
-
-            <div class="col-md-4 mentorship2">
-                <p class="about-details-paragraph-2">
-                    With direct access to an experienced property mentor, participants receive customized advice,
-                    step-by-step guidance, and accountability to help them achieve their specific investment goals.
-                    Whether navigating complex refurbishments in the BRRR model or maximizing occupancy and profits in
-                    serviced accommodation, our mentorship programme is designed to remove roadblocks and boost
-                    confidence.
-                </p>
-            </div>
-
-            <div class="col-md-4 mentorship3">
-                <p class="about-details-paragraph-3">
-                    The 1-to-1 format ensures that every session is focused on your unique challenges and opportunities,
-                    offering practical solutions and industry secrets that you won't find in standard training courses.
-                    If you're serious about building a profitable property portfolio and achieving financial freedom,
-                    our mentorship programme provides the expert support needed to fast-track your success.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid footer" id="contactUs">
-        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-        <div class="row footer-wrapper">
-            <div class="col-md-6 footer-contact-us">
-                <h4 class="contact">
-                    Contact us
-                </h4>
-                <div class="contact">
-                    <i class="bi bi-telephone intouch-icon"></i>
-                    <a href="" class="contact-detail">07727080878</a>
-                </div>
-
-                <div class="contact">
-                    <a href="" class="contact-detail">info@apexaproperties.com</a>
+            <div class="col-md-6">
+                <div class="image-container">
+                    <img class="keycollect" src="images/keyscollect.jpg" alt="">
                 </div>
             </div>
 
-            <div class="col-md-6 footer-social-handles">
-                <h4 class="social-handles">
-                    Social media handles
-                </h4>
-                <i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.facebook.com/successclub" class="handle">Facebook</a>
+                <div class="col-md-6">
+                    <h3 class="services-Accommodation-sub-healine">
+                        Serviced Accommodation Mastery (Online): Master the Short-Term Rental Market from Anywhere
+                    </h3>
+
+                    <p class="services-Accommodation-details-paragraph-1">
+                        Serviced Accommodation Intensive is a focused training programme designed for property investors
+                        and
+                        entrepreneurs looking to maximize returns through serviced accommodation strategies. Unlike
+                        traditional buy-to-let models, serviced accommodation involves offering short-term, fully
+                        furnished
+                        rental properties to business travelers, tourists, or temporary residents. This model often
+                        yields
+                        higher profits through nightly or weekly rates while maintaining flexibility.
+                    </p>
+
+                    <p class="services-Accommodation-details-paragraph-2">
+                        The programme covers everything from sourcing the right properties and setting up stylish,
+                        guest-ready spaces to managing bookings, optimizing occupancy rates, and ensuring compliance
+                        with
+                        regulations. Participants also gain insights into leveraging platforms like Airbnb and
+                        Booking.com,
+                        implementing dynamic pricing strategies, and delivering exceptional guest experiences.
+                    </p>
+
+                    <p class="services-Accommodation-details-paragraph-3">
+                        With a mix of video tutorials, live sessions, and downloadable resources, Serviced Accommodation
+                        Mastery (Online) empowers learners to progress at their own pace. Whether you’re looking to
+                        generate
+                        passive income, boost cash flow, or diversify your investment portfolio, this programme provides
+                        the
+                        practical tools and knowledge you need to thrive in the growing serviced accommodation
+                        market—all
+                        from the comfort of your home.
+                    </p>
+                </div>
             </div>
 
-            <div class="reserves">
-                <p class="mb-0">&copy; <span class="productionDate"> </span><a class="text-secondary fw-bold footer-names"
-                        href="#"> Apexa Properties </a> All Rights Reserved.
-                </p>
-                <div class="developer">
-                    <p class="developer"> Designed by <a class="text-secondary fw-bold footer-names"
-                            href="https://www.instagram.com/abayomi_adetona">Crowntona TecHub</a>
+            <div class="button">
+                <button class="learn-more" onclick="myFunction()">LEARN MORE</button>
+            </div>
+        </div>
+
+
+        <div class="container-fluid serviceMore2">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="Strategy-healine">
+                        BRRR Strategy: Build Wealth Through Property Investment
+                    </h3>
+
+                    <p class="strategies">
+                        Our BRRR Strategy programm is designed for property investors looking to generate long-term
+                        wealth
+                        and financial freedom through a proven investment model. BRRR stands for Buy, Refurbish, Rent,
+                        Remortgage, and it offers a systematic approach to building a high-performing property portfolio
+                        with minimal upfront capital.
+                        The programme guides participants through each stage of the strategy:
+                    <ul>
+                        <li>
+                            Buy: How to find and acquire undervalued or distressed properties.
+                        </li>
+
+                        <li>
+                            Refurbish: Adding value through strategic renovations and improvements.
+                        </li>
+
+                        <li>
+                            Rent: Generating steady cash flow by renting out the property.
+                        </li>
+
+                        <li>
+                            Remortgage Extracting equity to reinvest in the next property.
+                        </li>
+                    </ul>
+
+                    Through expert-led sessions, case studies, and actionable tools, our BRRR Strategy programme equips
+                    you with the knowledge and confidence to recycle your funds and scale your portfolio quickly.
+                    Whether you're a new or experienced investor, this programme provides a clear roadmap to achieving
+                    sustainable, long-term returns in the property market.
+                    </p>
+
+
+                </div>
+
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <img class="estate" src="images/estate.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- MENTORSHIP -->
+
+        <div class="container-fluid mentorship-wrapper" id="mentorship">
+            <div class="mentor">
+                <h1 class="mentorshipHeadline">
+                    <a href="" class="mentorshipHead">1-to-1 Mentorship</a>
+                </h1>
+                <h4 class="mentorship-sub-healine">
+                    1-to-1 Mentorship: Master the BRRR or Serviced Accommodation Strategy with Expert Guidance
+                </h4>
+            </div>
+            <div class="row mentorship-sub-wrapper">
+                <div class="col-md-4 mentorship1">
+
+                    <p class="mentorship-details-paragraph-1">
+                        Our 1-to-1 Mentorship Programme offers personalized coaching for property investors looking to
+                        excel
+                        in either the BRRR (Buy, Refurbish, Rent, Remortgage) or Serviced Accommodation strategies. This
+                        bespoke mentorship is ideal for those who want tailored support and actionable insights to
+                        accelerate their property investment journey.
+                    </p>
+                </div>
+
+                <div class="col-md-4 mentorship2">
+                    <p class="about-details-paragraph-2">
+                        With direct access to an experienced property mentor, participants receive customized advice,
+                        step-by-step guidance, and accountability to help them achieve their specific investment goals.
+                        Whether navigating complex refurbishments in the BRRR model or maximizing occupancy and profits
+                        in
+                        serviced accommodation, our mentorship programme is designed to remove roadblocks and boost
+                        confidence.
+                    </p>
+                </div>
+
+                <div class="col-md-4 mentorship3">
+                    <p class="about-details-paragraph-3">
+                        The 1-to-1 format ensures that every session is focused on your unique challenges and
+                        opportunities,
+                        offering practical solutions and industry secrets that you won't find in standard training
+                        courses.
+                        If you're serious about building a profitable property portfolio and achieving financial
+                        freedom,
+                        our mentorship programme provides the expert support needed to fast-track your success.
                     </p>
                 </div>
             </div>
         </div>
-    </div>
 
-    <script defer src="script/main.js"></script>
+        <div class="container-fluid footer" id="contactUs">
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+            <div class="row footer-wrapper">
+                <div class="col-md-6 footer-contact-us">
+                    <h4 class="contact">
+                        Contact us
+                    </h4>
+                    <div class="contact">
+                        <i class="bi bi-telephone intouch-icon"></i>
+                        <a href="" class="contact-detail">07727080878</a>
+                    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.0/countUp.min.js"
-        integrity="sha512-E0zfDwA1CopT4gzJmj9tMpd7O6pTpuybTK58eY1GwqptdasUohyImuualLt/S5XvM8CDnbaTNP/7MU3bQ5NmQg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+                    <div class="contact">
+                        <a href="" class="contact-detail">info@apexaproperties.com</a>
+                    </div>
+                </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+                <div class="col-md-6 footer-social-handles">
+                    <h4 class="social-handles">
+                        Social media handles
+                    </h4>
+                    <i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/successclub" class="handle">Facebook</a>
+                </div>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+                <div class="reserves">
+                    <p class="mb-0">&copy; <span class="productionDate"> </span><a
+                            class="text-secondary fw-bold footer-names" href="#"> Apexa Properties </a> All Rights
+                        Reserved.
+                    </p>
+                    <div class="developer">
+                        <p class="developer"> Designed by <a class="text-secondary fw-bold footer-names"
+                                href="https://www.instagram.com/abayomi_adetona">Crowntona TecHub</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.0/countUp.min.js" integrity="sha512-E0zfDwA1CopT4gzJmj9tMpd7O6pTpuybTK58eY1GwqptdasUohyImuualLt/S5XvM8CDnbaTNP/7MU3bQ5NmQg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
