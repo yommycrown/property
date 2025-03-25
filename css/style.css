@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: 2px solid green;
  
 }
 
@@ -49,13 +48,14 @@ body{
 }
 
 .logoname {
-    margin-top: 1rem;
+    margin-top: 3rem;
     text-decoration: none;
 }
 
 .logo-name {
-
+    margin-top: 3rem;
     text-decoration: none;
+
 }
 
 
@@ -465,7 +465,7 @@ footer {
     
     
     .navbar .navbar-brand{
-        width: 1rem;
+        width: 30px;
         height: 4rem;
         margin-left: 2px;
     }
