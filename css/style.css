@@ -323,14 +323,6 @@ text-align: left;
 
 
 
-/* FADEIN ANIMATION */
-
-.fade {
-    opacity: 1;
-  }
-
-
-
 .keycollect:hover{
     transform: scale(1.1);
 }
