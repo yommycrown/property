@@ -30,6 +30,13 @@
 
 
         function myFunction() {
-            document.querySelector('.serviceMore').style.display = "block";
+            var x = document.getElementById('serviceMore');
+
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+            
         }
 
